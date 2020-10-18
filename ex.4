@@ -1,0 +1,13 @@
+a = (input().split())
+b = len(a)
+w = 0
+k = 0
+for i in range(len(a)):
+    a[i] = float(a[i])
+for i in range(len(a)):
+    k = k+a[i]
+    a[i] = a[i]**2
+    w = w +a[i]
+k = -(k**2)/b
+w = (k+w)/b
+print(w)
